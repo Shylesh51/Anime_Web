@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+}
+
+.navbar {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: transparent;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 50px;
+  background: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  color: #06be67;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+.links ul {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.links a::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2.5px;
+  background-color: #06be67;
+  transition: all 0.5s;
+}
+
+.links a:hover::before {
+  width: 100%;
+}
+
+.logo {
+  color: #06be67;
+}
+
+.search-box {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border-radius: 50px;
+  padding: 0px 10px;
+  background-color: #06be67;
+  align-items: center;
+  justify-content: center;
+}
+
+.search i {
+  color: white;
+}
+
+.search:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.search:hover i {
+  color: #06be67;
+}
+
+.ha {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border-radius: 50px;
+  padding: 0px 10px;
+  background-color: #06be67;
+  align-items: center;
+  justify-content: center;
+}
+
+.ha i {
+  color: white;
+}
+
+.ha:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.ha:hover i {
+  color: #06be67;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+  padding: 0 2rem;
+  border-radius: 10px;
+  background: transparent;
+  background-size: 400%;
+  color: #06be67;
+  border: 1.5px solid #06be67;
+  cursor: pointer;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(82.3deg, rgb(85, 235, 118) 10.8%, #06be67 94.3%);
+  transition: all 0.5s;
+}
+
+.button:hover {
+  color: white;
+}
+
+.login {
+  text-decoration: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* slider panel */
+
+section {
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 90%;
+  height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  width: 600%;
+  height: 620px;
+  display: flex;
+  transition: 2s ease;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 16.7%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.manual-btn {
+  border: 2px solid #06be67;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #06be67;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .second {
+  margin-left: -17%;
+}
+
+#radio3:checked ~ .third {
+  margin-left: -33.75%;
+}
+
+#radio4:checked ~ .fourth {
+  margin-left: -50.6%;
+}
+
+#radio5:checked ~ .fifth {
+  margin-left: -67.5%;
+}
+
+#radio6:checked ~ .sixth {
+  margin-left: -84.4%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 560px;
+}
+
+.navigation-auto div {
+  border: 2px solid #06be67;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #06be67;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #06be67;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #06be67;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #06be67;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background: #06be67;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+  background: #06be67;
+}
+
+.heading3{
+  padding: 50px 100px;
+  font-size: x-large;
+  color: #06be67;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.slider-swiper{
+  font-family: "Poetsen One", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: content;
+  height: 100vh;
+  width: 100vw;
+}
+
+.swiper{
+  width: 50%
+}
+
+.swiper-wrapper{
+  width: 100%;
+  height: 42rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.card{
+  width: 40em;
+  height: 65%;
+  background-color: #262626;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+  padding: 2em 1em ;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_image{
+  border-radius: 15px;
+}
+
+.card_title{
+  font-size: x-large;
+  font-weight: bold;
+  position: relative;
+  color: #06be67;
+}
+
+.card_text{
+  margin-top: 20px;
+  color: aliceblue;
+}
+
+.card_btn{
+  margin-top: 40px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: #06be67;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  font-family: "Poetsen One", sans-serif;
+}
+
+/* Responsive CSS */
+@media (max-width: 991px) {
+  html {
+    font-size: 70%;
+  }
+
+  header .navbar {
+    padding: 2rem 0.5rem;
+    gap: 2rem;
+  }
+}

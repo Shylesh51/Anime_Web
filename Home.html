@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Website</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="shortcut icon" type="x-icon" href="./images/fox1.png">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <div class="pic"><img src="./images/fox1.png" style="width: 75px; height: 75px;"></div>
+                    <div class="name">Anime</div>
+                </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="Trending.html"><i class="fas fa-chart-line"></i> Trending</a></li>
+                    <li><a href="popular.html"><i class="fas fa-heart"></i> Popular</a></li>
+                    <li><a href="underrated.html"><i class="fas fa-bolt"></i> Underrated</a></li>
+                    <li><a href="family.html"><i class="fas fa-users"></i> Family</a></li>
+                </ul>
+            </div>
+            <!-- <div class="search">
+            <form class="search-box">
+                <input type="text" placeholder="Search..." autocomplete="on">
+                <button><box-icon name='search-alt-2' color='#06be67' ></box-icon></button>
+            </form>
+        </div> -->
+            <div class="login">
+                <button class="search">
+                    <i class="fa fa-search"></i>
+                </button>
+
+                <button class="ha">
+                    <i class="fas fa-heart"></i>
+                </button>
+
+                <button class="button">
+                    <span class="button-content">Login</span>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="slider">
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+
+                <div class="first">
+                    <img src="./images/charlotte.jpg" style="width: 90vw; height: 630px;">
+
+                    <h1 class="sub" style="position: absolute; top: 20px; left: 20px; color: #06be67; font-size: 5rem; background: transparent; padding: 10px;">What's New</h1>
+                <span class="descript" style="position: absolute; top: 200px; left: 20px; color: whitesmoke; font-size: 1.2rem; background: transparent; padding: 10px;">Welcome to Fox Anime! Enjoy enhanced HD streaming, an expanded anime library,<br> personalized recommendations, a user-friendly interface, multi-device support,<br> community features, and regular updates. Dive into a superior anime experience with us.<br> Explore new genres and hidden gems with our curated collections.<br> Stay engaged with interactive features and participate in exciting events.<br> Join Fox Anime today and connect with anime enthusiasts worldwide.<br> Experience anime like never before. Your adventure starts now! Happy streaming!</span>
+                </div>
+
+                <div class="second">
+                    <img src="./images/jujutsu.jpg" style="width: 90vw; height: 630px;">
+                </div>
+
+                <div class="third">
+                    <img src="./images/onepiece.jpg" style="width: 90vw; height: 630px;">
+                </div>
+
+                <div class="fourth">
+                    <img src="./images/bleach.jpg" style="width: 90vw; height: 630px;">
+                </div>
+
+                <div class="fifth">
+                    <img src="./images/hunter.jpg" style="width: 90vw; height: 630px;">
+                </div>
+
+                <div class="sixth">
+                    <img src="./images/mashle.png" style="width: 90vw; height: 630px;">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                </div>
+
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                <label for="radio6" class="manual-btn"></label>
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 6) {
+                    counter = 1;
+                }
+            }, 3000);
+        </script>
+    </section>
+
+    <h3 class="heading3">Our Recommendations</h3>
+
+    <section class="slider-swiper">
+        <section class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./images/cote.png" style="width: 100%; border-radius: 15px;">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card_title">Classroom of the Elite</span>
+
+                        <p class="card_text">The Japanese government has established the Tokyo Metropolitan Advanced
+                            Nurturing School, dedicated to instruct and foster the generation of people that will
+                            support the country in the future. The students are given a high degree of freedom in order
+                            to closely mimic real life.</p>
+
+                        <button class="card_btn">Watch Now</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./images/wind-breaker.jpg" style="width: 100%; height: 53vh; border-radius: 15px;">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card_title">Wind Breaker</span>
+
+                        <p class="card_text">Sakura is a loner and a high school delinquent who wants to be a fighter at
+                            the top of the world. He makes his way to Furin High School, a high school infamously known
+                            for its delinquents. now known as the "Chime of the Wind Breaker" - Bofurin.</p>
+
+                        <button class="card_btn">Watch Now</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./images/shangrila.jpg" style="width: 100%; border-radius: 15px;">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card_title">Shangri-la Frontier</span>
+
+                        <p class="card_text">Shangri-La Frontier or SLF is a VRMMORPG open world game whose main story
+                            involves exploring a vast world. Players assume assorted classes, completing story
+                            scenarios. A year after the launch of the game, its popularity had reached its new max of 30
+                            million accounts.</p>
+
+                        <button class="card_btn">Watch Now</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./images/spy.png" style="width: 100%; border-radius: 15px;">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card_title">Spy x Family</span>
+
+                        <p class="card_text">The story follows a spy who has to "build a family" to execute a mission,
+                            not realizing that his adopted daughter is a telepath, and the woman he agrees to marry is a
+                            skilled assassin.</p>
+
+                        <button class="card_btn">Watch Now</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./images/loveiswar.jpg" style="width: 100%; border-radius: 15px;">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card_title">Kaguya-sama Love is War</span>
+
+                        <p class="card_text">The proudly privileged top two students of an elite school each makes it
+                            their mission to be the first to extract a confession of love from the other. With later
+                            chapters developing the other members of the Student Council.</p>
+
+                        <button class="card_btn">Watch Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+
+                effect: "coverflow",
+                grabCursor: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 300,
+                    modifier: 1,
+                    slideShadows: false,
+                },
+
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+
+        <script src="slider.js"></script>
+    </section>
+
+</body>
+
+</html>
